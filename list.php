@@ -7,6 +7,9 @@ $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
 <html>
 <body>
+    <a href="add.php">Tambah Data</a>
+
+    <br/><br/>
     <table border="1">
         <tr>
             <th>Nama</th>
