@@ -1,7 +1,9 @@
 <?php
 include('connection.php');
 
-$query = mysqli_query($connect, "SELECT * FROM karyawan");
+$keyword = $_GET['keyword'];
+
+$query = mysqli_query($connect, "SELECT * FROM karyawan WHERE nama = '$keyword'");
 $results = mysqli_fetch_all($query, MYSQLI_ASSOC);
 ?>
 
